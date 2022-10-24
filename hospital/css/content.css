@@ -1,5 +1,37 @@
-.content div {
+.content {
   width: 100%;
   height: 100vh;
+}
+.content #main1 {
+  width: 100%;
   border-bottom: 1px solid black;
+  position: relative;
+}
+.content #main1 .fade {
+  border: 1px solid black;
+}
+.content #main1 .fade .slick-arrow {
+  display: none !important;
+}
+.content #main1 .fade .slick-slide {
+  height: 750px;
+}
+.content #main1 .fade #slick-slide00 {
+  background-image: url(../images/mv2.png);
+}
+.content #main1 .fade .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+.content .content-box {
+  width: 100%;
+  height: 100vh;
 }/*# sourceMappingURL=content.css.map */

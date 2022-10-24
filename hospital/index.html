@@ -6,19 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>병원</title>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/content.css">
     <link rel="stylesheet" href="./css/header.css">
+
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css"/> -->
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
+   
+    <!-- slick -->
 </head>
 <body>
     <div class="wrap">
-
+     <!-- header start -->
         <div class="header">
+            <!-- header-top start -->
             <div class="header-top">
-                
-                무슨무슨병원
+                <div class="inner">
+                    <div class="menuToggle"><img src="./images/moMenu.png" alt=""></div>
+                    <div class="logo"><a><img src="./images/logo.svg" alt=""></a></div>
+                    <div class="call"><a><img src="./images/call.png" alt=""></a></div>
+                </div>
             </div>
-
+            <!-- header-top end -->
+            
+            <!-- header-bottom start -->
             <div class="header-bottom">
                 <div class="inner">
                     <ul>
@@ -34,34 +48,65 @@
                     </ul>
                 </div>
             </div>
+            <!-- header-bottom end -->
         </div>
 
+    <!-- content -->
         <div class="content">
+
+       
+
+            <!-- main1  -->
+            <div class="" id="main1">
+                <div class="fade">
+                    <div>your content1</div>
+                    <div>your content2</div>
+                    <div>your content3</div>
+                </div>
+            </div>
+            <!-- main1 end  -->
             
-            <div class="main1" id="main1">
 
+            <!-- main2 -->
+            <div class="content-box" id="main2">
+                
             </div>
-
-            <div class="main2" id="main2">
-
-            </div>
+            <!-- main2 end-->
         </div>
-
-
+        <!-- content end -->
+        
+        
     </div>
 
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+            $('.fade').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear',
+            draggable:true
+            });
+        });
 
 
-    <script>
-         $(window).scroll(function(){
+        // header event
+        $(window).scroll(function(){
             var scroll = $(window).scrollTop();
-            if (scroll > 1) {
-            $(".header-top").css("display" , "none");
+            if (scroll > 129) {
+                $(".header-top").css("display" , "none");
+                $(".header-bottom").addClass("scroll");
+                
             }
             else{
-            $(".header-top").css("display" , "block");
+                $(".header-top").css("display" , "block");
+                // $(".header-bottom").css("top" , "110px");
+                $(".header-bottom").removeClass("scroll");
             }
         })
+        // header event
     </script>
 </body>
 </html>
