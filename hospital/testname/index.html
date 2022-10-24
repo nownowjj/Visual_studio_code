@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/content.css">
+    <link rel="stylesheet" href="./css/header.css">
+</head>
+<body>
+    <div class="wrap">
+
+        <div class="header">
+            <div class="header-top">무슨무슨병원</div>
+            <div class="header-bottom">
+                    <ul>
+                        <li><a>진료과목</a></li>
+                        <li><a>의료진소개</a></li>
+                        <li><a>도수교정치료</a></li>
+                        <li><a>비수술특화치료</a></li>
+                        <li><a>척추·관절클리닉</a></li>
+                        <li><a>장비소개</a></li>
+                        <li><a>병원둘러보기</a></li>
+                        <li><a>오시는길</a></li>
+                        <li><a>비급여고지</a></li>
+                    </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="main1" id="main1"></div>
+            <div class="main2" id="main2"></div>
+        </div>
+
+
+    </div>
+
+
+
+    <script>
+         $(window).scroll(function(){
+            var scroll = $(window).scrollTop();
+            if (scroll > 1) {
+            $(".header-top").css("display" , "none");
+            }
+            else{
+            $(".header-top").css("display" , "block");
+            }
+        })
+    </script>
+</body>
+</html>

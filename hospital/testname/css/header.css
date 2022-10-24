@@ -1,0 +1,42 @@
+.header {
+  border: 1px solid red;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.header .header-top {
+  transition: 3s;
+  width: 100%;
+  height: 110px;
+  background-color: yellow;
+}
+.header .header-bottom {
+  width: 100%;
+  height: 78px;
+  background-color: #e8e8e8;
+}
+.header .header-bottom ul {
+  height: 100%;
+  border: 1px solid black;
+  margin: 0px 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .header-bottom ul li {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  word-break: keep-all;
+  display: flex;
+  align-items: center;
+}
+.header .header-bottom ul li a {
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  color: #212121;
+  padding: 25px;
+}/*# sourceMappingURL=header.css.map */
