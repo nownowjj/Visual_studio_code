@@ -70,7 +70,6 @@
 }
 .content #main1 .inner {
   height: 100%;
-  min-height: 750px;
   width: 1240px;
   position: relative;
   margin-left: auto;
