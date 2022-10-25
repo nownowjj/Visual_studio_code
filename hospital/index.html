@@ -59,7 +59,7 @@
        
 
             <!-- main1  -->
-            <div class="" id="main1">
+            <div class="content-box" id="main1">
                 <div class="fade">
                     <div>your content1</div>
                     <div>your content2</div>
@@ -100,12 +100,14 @@
             if (scroll > 129) {
                 $(".header-top").css("display" , "none");
                 $(".header-bottom").addClass("scroll");
+                $("#main1").css("margin-top","80px");
                 
             }
             else{
                 $(".header-top").css("display" , "block");
                 // $(".header-bottom").css("top" , "110px");
                 $(".header-bottom").removeClass("scroll");
+                $("#main1").css("margin-top","0px");
             }
         })
         // header event
