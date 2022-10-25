@@ -5,35 +5,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>병원</title>
+    <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+    <!-- css -->
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/content.css">
     <link rel="stylesheet" href="./css/header.css">
-
+    <link rel="stylesheet" href="./css/main2.css">
+    <!-- css -->
+    
     <!-- slick -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css"/> -->
-    <!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
-   
     <!-- slick -->
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- aos -->
+
+
 </head>
-<body>
+<body data-aos-easing="ease-out-quad" data-aos-duration="600" data-aos-delay="100">
     <!-- laptop git  ss-->
 
     <div class="wrap">
      <!-- header start -->
         <div class="header">
-            <!-- header-top start -->
+
+            <!-- 시작 -->
             <div class="header-top">
+
                 <div class="inner">
+                    <!-- 모바일 메뉴 -->
                     <div class="menuToggle"><img src="./images/moMenu.png" alt=""></div>
-                    <div class="logo"><a><img src="./images/logo.svg" alt=""></a></div>
-                    <div class="call"><a><img src="./images/call.png" alt=""></a></div>
+
+                    <div id="moGnb">
+                        <ul class="gnb_dp1_wrap hash_bx list">
+                            <li class="gnb_dp1"><a href="http://127.0.0.1:5500/hospital/index.html#main2"
+                                    class="menu1">진료과목</a></li>
+                            <li class="gnb_dp1"><a href="http://xn--2q1bt99ca69y.kr/index.php#main5"
+                                    class="menu1">의료진소개</a></li>
+                            <li class="gnb_dp1"><a href="http://xn--2q1bt99ca69y.kr/index.php#main6"
+                                    class="menu1">척추·관절클리닉</a></li>
+                            <li class="gnb_dp1"><a href="http://xn--2q1bt99ca69y.kr/index.php#main7"
+                                    class="menu1">비수술특화치료</a></li>
+                            <li class="gnb_dp1"><a href="http://xn--2q1bt99ca69y.kr/index.php#main8"
+                                    class="menu1">도수교정치료</a></li>
+                            <li class="gnb_dp1"><a href="http://xn--2q1bt99ca69y.kr/index.php#main9"
+                                    class="menu1">장비소개</a></li>
+                            <li class="gnb_dp1"><a href="http://xn--2q1bt99ca69y.kr/index.php#main10"
+                                    class="menu1">병원둘러보기</a></li>
+                            <li class="gnb_dp1"><a href="http://xn--2q1bt99ca69y.kr/index.php#main11"
+                                    class="menu1">오시는길</a></li>
+                            <li class="gnb_dp1"><a href="http://xn--2q1bt99ca69y.kr/doc/intro1.php"
+                                    class="menu1">비급여고지</a></li>
+                        </ul>
+
+
+                        <script>
+                            $('.gnb_dp1_wrap li a').click(function () {
+                                $('html, body').animate({
+                                    scrollTop: $($.attr(this, 'href')).offset().top
+                                }, 500);
+                                return false;
+                            });
+                        </script>
+                    </div>
+
+                    <!-- 로고 -->
+                    <div class="logo">
+                        <a href="http://127.0.0.1:5500/hospital/index.html#main1">
+                            <img src="./images/logo.svg" alt="">
+                        </a>
+                    </div>
+
+                    <!-- 전화 및 카카오톡 버튼 -->
+                    <ul class="btn">
+                        <li>
+                            <a href="tel:0335318275">
+                                <img src="./images/call.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    
+
                 </div>
+
             </div>
-            <!-- header-top end -->
-            
+
+
+
+
+
+            <!-- 끝 -->
+
+
+
+
+
+
+
             <!-- header-bottom start -->
             <div class="header-bottom">
                 <div class="inner">
@@ -56,24 +129,116 @@
     <!-- content -->
         <div class="content">
 
-       
-
             <!-- main1  -->
-            <div class="content-box" id="main1">
+            <div class="" id="main1">
                 <div class="fade">
-                    <div>your content1</div>
-                    <div>your content2</div>
-                    <div>your content3</div>
+                    <div id="slider1 inner_wrap">
+                        <div class="inner">
+                            <div>
+                            <div class="txt">
+                                <h4 class="fc04">DONGHAE TEUNTEUN PAIN CLINIC</h4>
+                                <h3>
+                                    동해튼튼 마취통증의학과<span>만의</span><br>
+                                    <strong class="fc04">정확하고 섬세한 치료</strong>
+                                </h3>
+                                <p>
+                                    여러분의 통증을 공감하고, 분석하고, 해결하는 병원<br>
+                                    <span>가족을 돌보는 마음</span>으로 진료하겠습니다.
+                                </p>
+                                <div class="btn">
+                                    <a href="http://127.0.0.1:5500/hospital/index.html#main2" tabindex="0"><img
+                                            src="./images/mv_btn.png" alt=""></a>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slider2 inner_wrap">
+                        <div class="inner">
+                            <div class="txt">
+                                <h4 class="fc04">DONGHAE TEUNTEUN PAIN CLINIC</h4>
+                                <h3>
+                                    동해튼튼 마취통증의학과<span>만의</span><br>
+                                    <strong class="fc04">정확하고 섬세한 치료</strong>
+                                </h3>
+                                <p>
+                                    여러분의 통증을 공감하고, 분석하고, 해결하는 병원<br>
+                                    <span>가족을 돌보는 마음</span>으로 진료하겠습니다.
+                                </p>
+                                <div class="btn">
+                                    <a href="http://127.0.0.1:5500/hospital/index.html#main2" tabindex="0"><img
+                                            src="./images/mv_btn.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- main1 end  -->
             
 
+
             <!-- main2 -->
             <div class="content-box" id="main2">
-                
+                <div class="inner">
+                    <div class="m_tit aos-init" data-aos="fade-down" data-aos-duration="800">
+                        <h4 class="fc02">DONGHAE TEUNTEUN PAIN CLINIC</h4>
+                        <h3>
+                            척추·관절 비수술 중점진료<br>
+                            <span class="fc02">동해튼튼 마취통증의학과</span>는<span class="fc01"> 올바른 진료</span>만을 추구합니다.
+                        </h3>
+                        <p>
+                            동해튼튼 마취통증의학과는 바르고 정확한 진단과 올바른 진료로
+                            <span>정성껏 환자의 건강</span>을 챙기겠습니다.
+                        </p>
+                    </div>
+
+                    <div class="inner">
+                        <ul>
+
+                            <li data-aos="fade-up" data-aos-duration="1800" class="aos-init">
+                                <div class="img"><img src="./images/main2_img4.png" alt=""></div>
+                                <div class="tit"><span>도수교정</span> 클리닉</div>
+                                <p>대표원장이 직접 <br>관여하는 1:1맞춤<br> 도수 교정 클리닉</p>
+                            </li>
+
+                            <li data-aos="fade-up" data-aos-duration="1600" class="aos-init">
+                                <div class="img"><img src="./images/main2_img3.png" alt=""></div>
+                                <div class="tit"><span>비수술</span> 클리닉</div>
+                                <p>신경주사치료, <br>프롤로테라피, 체외충격파, <br>고강도 자기장 치료</p>
+                            </li>
+
+                            <li data-aos="fade-up" data-aos-duration="1200" class="aos-init">
+                                <div class="img"><img src="./images/main2_img1.png" alt=""></div>
+                                <div class="tit"><span>척추</span> 클리닉</div>
+                                <p>목디스크, 허리디스크, <br>척추관협착증, 수술 후 통증, <br>척추측만증</p>
+                            </li>
+
+                            <li data-aos="fade-up" data-aos-duration="1400" class="aos-init">
+                                <div class="img"><img src="./images/main2_img2.png" alt=""></div>
+                                <div class="tit"><span>관절</span> 클리닉</div>
+                                <p>퇴행성관절염, 어깨통증, <br>테니스엘보, 골프엘보, <br>수부·족부클리닉</p>
+                            </li>
+
+                            <li data-aos="fade-up" data-aos-duration="2000" class="aos-init">
+                                <div class="img"><img src="./images/main2_img5.png" alt=""></div>
+                                <div class="tit"><span>만성신경통증</span> 클리닉</div>
+                                <p>좌골신경통, <br>대상포진 후 신경통, <br>수근관 증후군</p>
+                            </li>
+
+                            <li data-aos="fade-up" data-aos-duration="2200" class="aos-init">
+                                <div class="img"><img src="./images/main2_img6.png" alt=""></div>
+                                <div class="tit"><span>영양수액</span>클리닉</div>
+                                <p>통증완화주사, 뇌기능 향상, <br>감기몸살, 집중력향상,<br> 숙취해소 등</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>    
+
+
             </div>
             <!-- main2 end-->
+
         </div>
         <!-- content end -->
         
@@ -81,15 +246,25 @@
     </div>
 
     <script type="text/javascript">
+        AOS.init();
 
+
+        
         $(document).ready(function(){
             $('.fade').slick({
-            dots: true,
             infinite: true,
-            speed: 500,
-            fade: true,
+            arrows:false,
+            dots: true,
+            // speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
             cssEase: 'linear',
-            draggable:true
+            draggable:true,
+
+            autoplay:true,
+            autoplaySpeed:5000,
+            fade: true,
+
             });
         });
 
@@ -100,12 +275,11 @@
             if (scroll > 129) {
                 $(".header-top").css("display" , "none");
                 $(".header-bottom").addClass("scroll");
-                $("#main1").css("margin-top","80px");
+                $("#main1").css("margin-top","200px");
                 
             }
             else{
                 $(".header-top").css("display" , "block");
-                // $(".header-bottom").css("top" , "110px");
                 $(".header-bottom").removeClass("scroll");
                 $("#main1").css("margin-top","0px");
             }

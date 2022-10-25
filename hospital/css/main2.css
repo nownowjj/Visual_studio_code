@@ -1,0 +1,53 @@
+#main2 {
+  background: url(../images/main2_bg.jpg) no-repeat center center;
+  background-size: cover;
+  padding: 20px 0 90px;
+  width: 100%;
+}
+#main2 .inner {
+  width: 1240px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+#main2 .inner .m_tit {
+  text-align: center;
+}
+#main2 .inner .m_tit h3 {
+  font-size: 2.5em;
+  line-height: 1.4em;
+  margin: 0.5em 0;
+  word-spacing: -0.1em;
+  letter-spacing: -0.05em;
+  font-weight: 300;
+}
+#main2 .inner .m_tit h3 span {
+  font-weight: 600;
+}
+#main2 .inner .m_tit p {
+  font-weight: 300;
+  font-size: 1.0625em;
+  word-break: keep-all;
+}
+#main2 .inner .m_tit p span {
+  font-weight: 500;
+}
+#main2 .inner .m_tit::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 80px;
+  background-color: #828c90;
+  margin: 0 auto 20px;
+}
+
+@media (max-width: 690px) {
+  #main2 {
+    padding: 20px 0 50px;
+  }
+}
+@media (max-width: 1240px) {
+  #main2 {
+    padding: 20px 0 80px;
+  }
+}/*# sourceMappingURL=main2.css.map */

@@ -8,19 +8,23 @@
 .header .scroll {
   position: fixed !important;
   z-index: 9999;
-  background-color: black;
+  background-color: #fff;
   width: 100%;
   top: 0;
 }
 .header .header-top {
-  transition: 3s;
   width: 100%;
   height: 130px;
-  background-color: rgb(255, 255, 255);
   position: relative;
+  border-bottom: 1px solid #eaeaea;
+  transition: 1s;
+  background-color: rgb(255, 255, 255);
+}
+.header .header-top #moGnb {
+  display: none;
 }
 .header .header-top .inner {
-  width: 1240px;
+  height: 100%;
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -31,12 +35,23 @@
 .header .header-top .inner .menuToggle img {
   width: 100%;
   max-width: 38px;
+  display: none;
+}
+.header .header-top .inner .logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 420px;
+}
+.header .header-top .inner .btn {
+  position: absolute;
+  right: 5%;
 }
 .header .header-bottom {
   width: 100%;
   height: 80px;
-  background-color: #e8e8e8;
   position: relative;
+  border-bottom: 1px solid #eee;
 }
 .header .header-bottom .inner {
   width: 1240px;
@@ -47,7 +62,6 @@
 }
 .header .header-bottom ul {
   height: 100%;
-  border: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,11 +77,48 @@
 .header .header-bottom ul li a {
   width: 100%;
   height: 100%;
+  font-size: 18px;
+  font-weight: 550;
   color: #212121;
   padding: 25px;
 }
 @media (max-width: 1240px) {
+  .header .header-top {
+    height: 90px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    background-color: #fff;
+    display: block !important;
+  }
+  .header .logo {
+    max-width: 300px;
+    width: 300px !important;
+  }
   .header .menuToggle {
-    display: block;
+    position: absolute;
+    left: 5%;
+  }
+  .header .menuToggle img {
+    display: block !important;
+  }
+  .header .header-bottom {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .header .logo {
+    max-width: 240px;
+  }
+  .header .header-top {
+    height: 72px;
+  }
+  .header .header-top .menuToggle img {
+    max-width: 30px !important;
+  }
+  .header .header-top .btn li a img {
+    max-width: 36px;
+    width: 100%;
   }
 }/*# sourceMappingURL=header.css.map */

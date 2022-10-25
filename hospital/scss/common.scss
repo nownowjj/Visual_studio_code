@@ -1,18 +1,43 @@
+.fc02 {
+    color: #2897cc !important;
+}
+.fc01 {
+    color: #a1d63e !important;
+}
 *{
     box-sizing: border-box;
     margin: 0; 
     padding: 0;
+    font-family: 'Noto Sans KR', 'Noto Sans Korean', sans-serif;
  }
 body{
     // width: 100vw;
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    width: 100vw;
+    max-width:100%;
 }
 .wrap{
     position: relative;
+    width: 100%;
 }
 a{
+    outline: none;
     text-decoration: none;
     cursor: pointer;
 }
 li{
     list-style-type: none;
+}
+
+@media(max-width: 1240px){
+    body{
+        font-size: 11px;
+    }
+}
+@media (max-width: 690px){
+    body{
+        font-size: 10px;
+    }
 }
