@@ -125,10 +125,6 @@
 .content #main1 .inner .txt p span {
   font-weight: 500;
 }
-.content .content-box {
-  width: 100%;
-  border: 1px solid red;
-}
 @media (max-width: 1240px) {
   .content #main1 {
     margin-top: 0px !important;

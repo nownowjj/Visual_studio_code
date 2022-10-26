@@ -64,7 +64,10 @@
 
 @media (max-width: 690px) {
   #main2 {
-    padding: 20px 0 50px;
+    padding: 20px 0 30px !important;
+  }
+  #main2 h3 {
+    font-size: 1.5em !important;
   }
   #main2 ul {
     margin-top: 50px;
