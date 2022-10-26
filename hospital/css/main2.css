@@ -40,6 +40,9 @@
   background-color: #828c90;
   margin: 0 auto 20px;
 }
+#main2 .inner .inner {
+  width: 100%;
+}
 
 @media (max-width: 690px) {
   #main2 {
